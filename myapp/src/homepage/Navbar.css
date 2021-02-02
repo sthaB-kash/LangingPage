@@ -1,0 +1,7 @@
+.navbar{
+    display:flex;
+    justify-content:space-evenly;
+}
+.nav__right{
+    display:flex;
+}

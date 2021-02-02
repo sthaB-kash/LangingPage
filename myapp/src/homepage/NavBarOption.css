@@ -1,0 +1,14 @@
+.option_bar{
+    display:flex;
+    padding:10px;
+    
+}
+.option_bar:hover{
+    cursor:pointer;
+}
+.option_bar >h5{
+    margin-left:10px;
+}
+.option_bar >Icon{
+    margin: 20px;
+}

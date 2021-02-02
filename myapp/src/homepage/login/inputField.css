@@ -1,0 +1,34 @@
+.input-field {
+    font-size: 1rem;;    
+    margin-top: 10px;
+    /* padding: 10px 0px 10px 30px; */
+    color: #000;
+    background: #fff;
+    position: relative;
+    outline: none!important;
+    box-shadow: none;
+    border: 0 none #fff;
+    border-radius: 15px;
+    width: 100%;
+}
+input.login-username, input.login-password {
+    padding: 10px 5px 10px 45px;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 1rem;
+    border: none;
+    border-width: 0;
+    outline: 0;
+    box-shadow: none;
+}
+ 
+.icon {
+    position: absolute;
+    color: green;
+    font-size: 1.2rem;
+    top: 50%;
+    transform: translate(5px, -50%);
+}
+input.login-username:focus, input.login-password:focus{
+    outline: none!important;
+}

@@ -1,0 +1,51 @@
+.navbar{
+    display:flex!important;
+    justify-content:space-evenly;
+    position: sticky;
+    top: 0;
+    animation: mynav 1.4s 0s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    z-index: 2;
+    background: rgba(67, 109, 209, 1);
+    color: rgba(255, 255, 255, 0.7);
+}
+.nav__right{
+    display:flex;
+}
+
+@keyframes mynav {
+    0% {
+        top: -100px;
+    }
+    10% {
+        top: -90px;
+    }
+    20% {
+        top: -80px;
+    }
+    30% {
+        top: -70px;
+    }
+    40% {
+        top: -60px;
+    }
+    50% {
+        top: -50px;
+    }
+    60% {
+        top: -40px;
+    }
+    70% {
+        top: -30px;
+    }
+    80% {
+        top: -20px;
+    }
+    90% {
+        top: -10px;
+    }
+    100% {
+        top:0px;
+    }
+}

@@ -1,0 +1,33 @@
+.login-div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    display:none;
+    height: 400px;
+    width: 370px;
+    background: #2e2e2e;
+    color: #fff;
+    font-size: .8rem;
+    border-radius: 1rem;
+    box-shadow: 2px 3px 2px 2px rgba(128, 128, 128, 0.658);
+    padding: 20px 40px;
+    text-align: center; 
+}
+
+.input-field-div {
+    margin-top: 35px;
+}
+
+.background {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    display: none;
+    z-index:1;
+}

@@ -1,30 +1,40 @@
 import React from 'react'
-// import './index.css' 
-
-function HomePage () {
+import './Navbar.css'
+import Avatar from '@material-ui/core/Avatar';
+import NavBarOption from './NavBarOption'
+import HomeIcon from '@material-ui/icons/Home';
+import InfoIcon from '@material-ui/icons/Info';
+import HelpIcon from '@material-ui/icons/Help';
+import SchoolIcon from '@material-ui/icons/School';
+import WorkIcon from '@material-ui/icons/Work';
+import NavbarToggler from './NavbarToggler';
+function NavBar() {
     return (
-        <React.Fragment>
-            <NavBar />
-            <BackgroundImage />
-            <div className="login-signup">
-                <LoginSignup name="Login" className="login-btn" />
-                <LoginSignup name="Signup" className="signup-btn" />
+        <div class="navbar nav">
+            {/* <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                 <NavbarToggler />             
+            </button> */}
+            <div className="nav__left">
+                <h2 className="text-white">Name goes here...</h2>
             </div>
-
-        </React.Fragment>
-      
+            <div className="nav__right">
+                <NavBarOption Icon={HomeIcon} name="Home" className="nav-item active text-white"/>
+                <NavBarOption Icon={InfoIcon} name="About Us" className="nav-item"/>
+                <NavBarOption Icon={HelpIcon} name="Support" className="nav-item"/>
+                <NavBarOption Icon={SchoolIcon} name="University" className="nav-item"/>
+                <NavBarOption Icon={WorkIcon} name="Career"className="nav-item"/>
+            </div>    
+        </div>
     );
 }
 
-const NavBar = () => {
-    return (
-        <nav className="navbar navbar-expand-lg">
-            <a className="navbar-brand" href='#none' style={{paddingRight: '30px'}}>Company Name</a>
-            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                 <NavbarToggler />             
-            </button>
 
-            <div className="collapse navbar-collapse" id="navbarSupportedContent">
+
+const NavBarl = () => {
+    return (
+        <nav className="navbar navbar-expand-lg nav">
+            
+            <div className="collapse navbar-collapse nav__right" id="navbarSupportedContent">
                 <ul className="navbar-nav mr-auto">
                 <li className="nav-item active">
                     <a className="nav-link" href="#none">Home <span className="sr-only">(current)</span></a>
@@ -68,37 +78,5 @@ const NavBar = () => {
     );
 };
 
-const BackgroundImage = () => {
-    // const img = "";
-    return (
-        <div className="background-image">
-            
-        </div>
-    );
-};
 
-const LoginSignup =(props) => {
-    return (
-        <div className={props.className}>
-            {props.name}
-        </div>
-    );
-};
-
-const NavbarToggler = () => {
-     
-        return (
-            <>
-            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="red" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
-                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
-            </svg>
-    
-        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="white" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
-            <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
-        </svg>
-        </>
-    );
-}
-
-export default HomePage
- 
+export default NavBar

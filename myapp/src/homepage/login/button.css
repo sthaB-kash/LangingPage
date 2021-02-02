@@ -1,0 +1,32 @@
+.login-div-btns {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+ }
+
+.user-login-btn {
+    font-size: 1.2rem;
+    color: #fff;
+    cursor: pointer;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 18px;
+    flex: 50%;
+}
+
+.user-login-btn {
+    background: rgb(45, 91, 218);
+    justify-content: end;
+}
+.login-cancel-btn {
+    font-size: 0.8rem;
+    color: lightcoral;
+    background: #2e2e2e;
+    padding: 5px;
+    border: 0 none #2e2e2e
+}
+.login-cancel-btn:hover {
+    font-weight: 900;
+}
